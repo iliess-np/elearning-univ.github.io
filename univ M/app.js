@@ -58,24 +58,24 @@ function myMovelocation() {
 }
 
 function myMoveshare() {
-  if ($(window).width() > 900) {
-    document.getElementById("empty-box").style.display = "block";
-    document.getElementById("e-mail").style.display = "none";
-    document.getElementById("location").style.display = "none";
-    document.getElementById("share-p").style.display = "block";
+  // if ($(window).width() > 900) {
+  document.getElementById("empty-box").style.display = "block";
+  document.getElementById("e-mail").style.display = "none";
+  document.getElementById("location").style.display = "none";
+  document.getElementById("share-p").style.display = "block";
 
-    var elem = document.getElementById("empty-box");
-    var pos = 0;
-    var id = setInterval(frame, 1);
-    function frame() {
-      if (pos == 65) {
-        clearInterval(id);
-      } else {
-        pos++;
-        elem.style.bottom = pos + "px";
-      }
+  var elem = document.getElementById("empty-box");
+  var pos = 0;
+  var id = setInterval(frame, 1);
+  function frame() {
+    if (pos == 65) {
+      clearInterval(id);
+    } else {
+      pos++;
+      elem.style.bottom = pos + "px";
     }
   }
+  //}
 }
 
 function mymovedis() {
